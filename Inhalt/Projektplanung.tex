@@ -26,32 +26,29 @@ Eine detailliertere Zeitplanung findet sich im \Anhang{app:Zeitplanung}.
 
 
 \subsection{Abweichungen vom Projektantrag}\label{sec:AbweichungenProjektantrag}
-Auch bei der Durchführung des Projektes wurde von der im Antrag angegebenen Umsetzung an einigen Punkten abgewichen:\\
-	\textbf{UML-Diagramme:} 
-	bei den im Antrag angegebenen UML-Diagrammen wurde eine Satz an Diagrammen angekündigt, welcher der tatsächlichen Umsetzung nur bedingt genützt hätten. 
-	weshalb folgendes Diagramme augetauscht wurden: 
-	\begin{itemize}
-		\item Klassendiagramm wurde durch Komponentendiagramm ersetzt
-	Da Python zwar klassenorentiert konzipiert wurde, das Projekt jedoch keine Klassenobjekte benötigte, wurde ein ausführliches Komponentendiagramme erstellt.
-		Dieses Diagramm wurde als geegneter angesehen die recht komplexen Abläufe und Verbindungen der Komponente untereinander zu veranschaulichen.  
-		\item Aktivitätsdiagramm wurde zu drei Diagrammen ausgeweitet: 
-		Aufgrund einer modularen Abtrennung der Komponenten untereinander wurde hier entschieden das ursprüngliche Diagramm um zwei weiter zu ergänzen. 
+\begin{itemize}
+    \item \textbf{UML-Diagramme:} Bei den im Antrag angegebenen UML-Diagrammen wurde eine Satz an Diagrammen angekündigt, welcher der tatsächlichen Umsetzung nur bedingt genützt hätte. Daher wurden folgende Diagramme augetauscht:
+    \begin{itemize}
+        \item \textbf{Klassendiagramm wurde durch Komponentendiagramm ersetzt:} Da Python zwar klassenorientiert konzipiert wurde, das Projekt jedoch keine Klassenobjekte benötigte, wurde ein ausführliches Komponentendiagramme erstellt. Dieses Diagramm wurde als geeigneter angesehen, um die recht komplexen Abläufe und Verbindungen der Komponenten untereinander zu veranschaulichen.
+        \item \textbf{Aktivitätsdiagramm wurde zu drei Diagrammen ausgeweitet:} Aufgrund einer modularen Abtrennung der Komponenten untereinander wurde hier entschieden, das ursprüngliche Diagramm um zwei weitere zu ergänzen.
 	\end{itemize}
-	Die Gründe hierfür werden in der UML-Dokumentation näher erläutert\\
-
-	\textbf{Architektur der Anwendung}
-	Ursprünglich wurden im Projekt drei Module geplant: 
+Die Gründe hierfür werden in der UML-Dokumentation näher erläutert
+\end{itemize}
+\begin{itemize}
+	\item\textbf{Architektur der Anwendung}
+ Ursprünglich wurden im Projekt drei Module geplant:
 	\begin{itemize}
-		\item main.py 
-		\item com-server.py 
-		\item test.db
+    	\item main.py
+    	\item com-server.py
+    	\item test.db
 	\end{itemize}
-In der Umsetzung zeigte sich, das die main.py, welche als der Startpunkt aller Komponenten definiert wurde, unnötig war.
-Da bei der Erstellung des für den Flaskserver benötigte Docker-Images ein Befehl zum ausführen der com_server.py-Datei integriert wurde und sonstige Startprozesse wie die Verknüpfung von Server mit Datenbank und das etablieren von Ports, Verbindungen und bereitstellen von API-Endpunkten vollständing zwischen Docker-Compose, 
-Der Dockerfile und der REST-API realisiert wurde, hätte das erstellen einer externen, lokalen App eine Redundanz und unnötigen Ressourceneinsatz bedeutet.\\ 
-	\textbf{Testphasen wurden Entsprechend an dem Veränderten Umsetzung angepasst.
-
-. 
+In der Umsetzung zeigte sich, dass die main.py, welche als der Startpunkt aller Komponenten definiert wurde, unnötig war. Da bei der Erstellung des für den Flaskserver benötigten Docker-Images ein Befehl zum ausführen der comserver.py-Datei integriert wurde und sonstige Startprozesse wie die Verknüpfung von Server mit Datenbank und das etablieren von Ports, Verbindungen und bereitstellen von API-Endpunkten vollständig zwischen Docker-Compose, Der Dockerfile und der REST-API realisiert wurde, hätte das Erstellen einer externen, lokalen App eine Redundanz und unnötigen Ressourceneinsatz bedeutet.}
+\end{itemize}
+\begin{itemize}
+	\item \textbf{Testphasen wurden entsprechend an dem veränderten Umsetzung angepasst. Ebenso sind durch di veränderte Software die Diagramme nur noch bedingt brauchbar und 
+eigentlich irreführen ohne weiterführenden Erklärung.}
+\end{itemize}
+ 
 
 
 \subsection{Ressourcenplanung}
