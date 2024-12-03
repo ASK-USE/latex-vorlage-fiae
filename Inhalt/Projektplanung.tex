@@ -19,10 +19,10 @@
 	\item Verfeinerung der Zeitplanung, die bereits im Projektantrag vorgestellt wurde.
 \end{itemize}
 
-\paragraph{Beispiel}
-Tabelle~\ref{tab:Zeitplanung} zeigt ein Beispiel für eine grobe Zeitplanung.
-\tabelle{Zeitplanung}{tab:Zeitplanung}{ZeitplanungKurz}\\
-Eine detailliertere Zeitplanung findet sich im \Anhang{app:Zeitplanung}.
+%\paragraph{Beispiel}
+%Tabelle~\ref{tab:Zeitplanung} zeigt ein Beispiel für eine grobe Zeitplanung.
+%\tabelle{Zeitplanung}{tab:Zeitplanung}{ZeitplanungKurz}\\
+%Eine detailliertere Zeitplanung findet sich im \Anhang{app:Zeitplanung}.
 
 
 \subsection{Abweichungen vom Projektantrag}\label{sec:AbweichungenProjektantrag}
@@ -31,38 +31,68 @@ Eine detailliertere Zeitplanung findet sich im \Anhang{app:Zeitplanung}.
     \begin{itemize}
         \item \textbf{Klassendiagramm wurde durch Komponentendiagramm ersetzt:} Da Python zwar klassenorientiert konzipiert wurde, das Projekt jedoch keine Klassenobjekte benötigte, wurde ein ausführliches Komponentendiagramme erstellt. Dieses Diagramm wurde als geeigneter angesehen, um die recht komplexen Abläufe und Verbindungen der Komponenten untereinander zu veranschaulichen.
         \item \textbf{Aktivitätsdiagramm wurde zu drei Diagrammen ausgeweitet:} Aufgrund einer modularen Abtrennung der Komponenten untereinander wurde hier entschieden, das ursprüngliche Diagramm um zwei weitere zu ergänzen.
-	\end{itemize}
-Die Gründe hierfür werden in der UML-Dokumentation näher erläutert
+    \end{itemize}
+    Die Gründe hierfür werden in der UML-Dokumentation näher erläutert.
 \end{itemize}
 \begin{itemize}
-	\item\textbf{Architektur der Anwendung}
- Ursprünglich wurden im Projekt drei Module geplant:
+\item \textbf{Architektur der Anwendung:} Ursprünglich wurden im Projekt drei Module geplant:
 	\begin{itemize}
     	\item main.py
     	\item com-server.py
     	\item test.db
 	\end{itemize}
-In der Umsetzung zeigte sich, dass die main.py, welche als der Startpunkt aller Komponenten definiert wurde, unnötig war. Da bei der Erstellung des für den Flaskserver benötigten Docker-Images ein Befehl zum ausführen der comserver.py-Datei integriert wurde und sonstige Startprozesse wie die Verknüpfung von Server mit Datenbank und das etablieren von Ports, Verbindungen und bereitstellen von API-Endpunkten vollständig zwischen Docker-Compose, Der Dockerfile und der REST-API realisiert wurde, hätte das Erstellen einer externen, lokalen App eine Redundanz und unnötigen Ressourceneinsatz bedeutet.}
+In der Umsetzung zeigte sich, dass die main.py, welche als der Startpunkt aller Komponenten definiert wurde, unnötig war. Da bei der Erstellung des für den Flaskserver benötigten Docker-Images ein Befehl zum ausführen der comserver.py-Datei integriert wurde und sonstige Startprozesse wie die Verknüpfung von Server mit Datenbank und das etablieren von Ports, Verbindungen und bereitstellen von API-Endpunkten vollständig zwischen Docker-Compose, Der Dockerfile und der REST-API realisiert wurde, hätte das Erstellen einer externen, lokalen App eine Redundanz und unnötigen Ressourceneinsatz bedeutet.
 \end{itemize}
-\begin{itemize}
-	\item \textbf{Testphasen wurden entsprechend an dem veränderten Umsetzung angepasst. Ebenso sind durch di veränderte Software die Diagramme nur noch bedingt brauchbar und 
-eigentlich irreführen ohne weiterführenden Erklärung.}
+\begin{itemize}\item \textbf{Testphasen wurden entsprechend an dem veränderten Umsetzung angepasst.}
 \end{itemize}
- 
 
-
-\subsection{Ressourcenplanung}
-\label{sec:Ressourcenplanung}
+\subsection{Ressourcenplanung}\label{sec:Ressourcenplanung}
+\textbf{Hardware/Software:}
 
 \begin{itemize}
-	\item Detaillierte Planung der benötigten Ressourcen (Hard-/Software, Räumlichkeiten \usw).
-	\item \Ggfs sind auch personelle Ressourcen einzuplanen (\zB unterstützende Mitarbeiter).
-	\item Hinweis: Häufig werden hier Ressourcen vergessen, die als selbstverständlich angesehen werden (\zB PC, Büro). 
+    \item \textbf{Laptop:} Dell Inc. Latitude E6540 (OS: Fedora 41, Linux-Distribution)
+	\begin{itemize}
+        \item Visual Studio Code
+        \item Docker
+        \begin{itemize}
+			\item Docker-Compose
+            \item PostgreSQL (offizielles Image)
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Python-Versionen:} Python 3.12
 \end{itemize}
 
+ Zweiter Laptop mit Windows 10 
+    \begin{itemize}
+        \item \textbf{Laptop:} Lenovo ThinkPad (OS: Windows 10, Enterprise Edition)
+        \begin{itemize}
+            \item Python-Version: Python 3.x
+            \item Python-Pakete: locust==2.32.3
+        \end{itemize}
+    \end{itemize}
+
+Hardware-Zubehör:
+    \begin{itemize}
+        \item Monitore  
+        \item Tastatur  
+        \item Maus  
+    \end{itemize}
+	
+Sonstiges: 
+\begin{itemize}
+	\item Ausführender Entwicklung, Planung, Umsetzung, Dokumentation: 80h
+	\item Betreuer: 5 h
+	\item Büroplatz: Tisch, Stuhl, Steckdosen
+	\item sonstige Kosten(schwer zu ermitteln): Strom, Wasser, Heizung, etc. 
+\end{itemize}
 
 \subsection{Entwicklungsprozess}
 \label{sec:Entwicklungsprozess}
 \begin{itemize}
-	\item Welcher Entwicklungsprozess wird bei der Bearbeitung des Projekts verfolgt (\zB Wasserfall, agiler Prozess)?
+	\item Da dieses Projekt einer Machbarkeitsstudie sehr ähnlich ist, und aufgrund der Einmann-Umsetzung  eine agile Arbeitsweise zum Einsatz, was dem Projekt zugute kam.
+	Da Ausführender, Project-Owner, Stakeholder, Scrum-Master und Team in einer Person vereint war, war die Etablierung dieser Arbeitsweis und deren Umsetzung sehr 
+	unproblematisch, da keine langwierigen Kommunikationswege (Email, Briefverkehr, Telefonate) oder Abstimmungen, Übergabeprozesse und Präsentationen durchgeführt werden mussten.
+	 Lediglich dem Betreuern wurden täglich die Erstellten Skripte und Dokumente übergeben,was diesen die möglichkeit gab Änderungen oder Probleme anzusprechen.   
+	Bei der Entwicklung war die Grundprämisse, das die im Lastenheft hinterlegten Anforderungen und deren Gewichtungen erfüllt werden. Diese Kriterien erfüllt die Software
+	vollkommen zufriedenstellend.    	 
 \end{itemize}
