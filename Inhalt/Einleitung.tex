@@ -5,24 +5,44 @@
 
 \subsection{Projektumfeld} 
 \label{sec:Projektumfeld}
+\textbf{Zum Praktikumsbetrieb:} \\
+Das Fraunhofer Institut für Produktionstechnik und Automatisierung(IPA) - eines der größten Institute der Fraunhofer-Gesellschaft - wurde 1959 gegründet und beschäftigt rund 1200 Mitarbeiterinnen und Mitarbeiter. Organisatorische und technologische Aufgabenstellungen aus der Produktion bilden die Forschungs- und Entwicklungsschwerpunkte. Verfahren, Komponenten und Geräte bis hin zu kompletten Maschinen und Anlagen werden vom Institut entwickelt, erprobt und beispielhaft eingesetzt.\\
+\\
+\textbf{Zum Forschungsprojekt:}\\ Das Forschungsprojekt »H2GO – Nationaler Aktionsplan Brennstoffzellen-Produktion« des Fraunhofer Instituts hat das Ziel, die Produktion von Brennstoffzellen in Deutschland zu revolutionieren und damit einen wesentlichen Beitrag zur Reduzierung von CO2-Emissionen im Schwerlastverkehr zu leisten.\\
+(Pressemitteilung H2Go: \href{https://www.iwu.fraunhofer.de/de/presse-und-medien/presseinformationen/PM-2022-ZV-Startschuss-fuer-das-Wasserstoffzeitalter-in-der-Lastenmobilitaet.html}{www.iwu.fraunhofer.de})\\
+H2GO bündelt die Aktivitäten von 19 Fraunhofer-Instituten, um Technologien zu entwickeln, die eine kosteneffiziente und großflächige Produktion von Brennstoffzellen ermöglichen.\\
+Das Projekt lässt sich in zwei Teilbereiche Aufteilen:
 \begin{itemize}
-	\item Kurze Vorstellung des Ausbildungsbetriebs (Geschäftsfeld, Mitarbeiterzahl \usw)
-	\item Wer ist Auftraggeber/Kunde des Projekts?
+	\item Produktion: auf vier Standorte verteilt, forscht an Umsetzungen und fertigen Komponenten für diese.
+	\item Digitaliserung/Virtualisierung: Erstellt die digitalen und virtuellen Anteile der Referenzfabrik, koordiniert die Netzwerkstrukturen.
 \end{itemize}
+\textbf{Zum Teilbereich} (in welchem das Projekt realisiert wurde):\\
+Im Teilbereich der virtuellen Referenzfabrik wird die Digitalisierung und virtuellen Abbildung einer automatisierten Brennstoffzellenproduktion durch digitale Zwillinge nach \href{Navigation/DE/Home/home.html}{Industrie-4.0}-Standards umgesetzt.\\
+Realisiert werden die digitalen Zwillinge dabei als Verwaltungsschalen (= AAS = Asset
+Administration Shell).\\ 
+ Aufgabe des Teilbereichs ist, eine möglichst exakte virtuelle Abbildung des gesamten Prozesses, des Produktes, der Produktionsdaten und -mittel, sowie Teilprodukte erzeugt werden.\\
+ \\
+\textbf{Auftraggeber:} \\
+Auftragsvergabe für das REST-Frameworks erfolgte aufgrund meiner Überlegungen und Anregungen zur Ausfallsicherheit im Teilbereichs-Meeting und wurde durch Praktikums-Betreuer Dipl.-Ing Bumin Hatiboglu, wodurch dies ein internes Projekt des IPA und der betrefenden Abteilung ist.
+
 
 
 \subsection{Projektziel} 
 \label{sec:Projektziel}
 \begin{itemize}
-	\item Worum geht es eigentlich?
-	\item Was soll erreicht werden?
+	\item \textbf{Was ist das Problem?}\\
+    in der derzeitigen Planung und Umsetzung der Netzwerkarchitektur sollen die verschiedenen Daten des digitalen Zwillings von einem zentralen Registry-Server verwaltet werden, welcher die Speicherorte, Beziehungen und Verknüpfungen aller im Projekt vorhandenen Shells referenziert, und letztlich allen qualifizierten Clients ( Client = Stakeholder) bereit stellt.\\
+    Dieser eine Registry-Server weist jedoch bisher keine wirkliche Ausfallsicherheit bei einem Netwerkausfall auf, was auf Basis einer Risikoanalyse besonders kritisch für die Ausfallsicherheit des Projektnetzwerk ist und bei Ausfall die Produktion letztlich zum Erliegen bringen würde.
+	\item \textbf{erreicht werden soll?}\\
+    Ein sinnvoller Ansatz wäre es hier, die Engstelle eines Registryservers durch eine Redundantes System zu erweitern, was als Backupstrategie in der Regel  auch dem tatsächlich üblichen Industriestandard zur Riskiominimierung entspricht.  
+    
 \end{itemize}
 
 
 \subsection{Projektbegründung} 
 \label{sec:Projektbegruendung}
 \begin{itemize}
-	\item Warum ist das Projekt sinnvoll (\zB Kosten- oder Zeitersparnis, weniger Fehler)?
+	\item \textbf{Warum ist das Projekt sinnvoll} (\zB Kosten- oder Zeitersparnis, weniger Fehler)?
 	\item Was ist die Motivation hinter dem Projekt?
 \end{itemize}
 
