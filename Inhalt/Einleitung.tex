@@ -5,7 +5,7 @@
 
 \subsection{Projektumfeld} 
 \label{sec:Projektumfeld}
-\textbf{Zum Praktikumsbetrieb:} \\
+\textbf{Zum Praktikumsbetrieb:}\\
 Das Fraunhofer Institut für Produktionstechnik und Automatisierung(IPA) - eines der größten Institute der Fraunhofer-Gesellschaft - wurde 1959 gegründet und beschäftigt rund 1200 Mitarbeiterinnen und Mitarbeiter. Organisatorische und technologische Aufgabenstellungen aus der Produktion bilden die Forschungs- und Entwicklungsschwerpunkte. Verfahren, Komponenten und Geräte bis hin zu kompletten Maschinen und Anlagen werden vom Institut entwickelt, erprobt und beispielhaft eingesetzt.\\
 \\
 \textbf{Zum Forschungsprojekt:}\\ Das Forschungsprojekt »H2GO – Nationaler Aktionsplan Brennstoffzellen-Produktion« des Fraunhofer Instituts hat das Ziel, die Produktion von Brennstoffzellen in Deutschland zu revolutionieren und damit einen wesentlichen Beitrag zur Reduzierung von CO2-Emissionen im Schwerlastverkehr zu leisten.\\
@@ -16,8 +16,9 @@ Das Projekt lässt sich in zwei Teilbereiche Aufteilen:
 	\item Produktion: auf vier Standorte verteilt, forscht an Umsetzungen und fertigen Komponenten für diese.
 	\item Digitaliserung/Virtualisierung: Erstellt die digitalen und virtuellen Anteile der Referenzfabrik, koordiniert die Netzwerkstrukturen.
 \end{itemize}
-\textbf{Zum Teilbereich} (in welchem das Projekt realisiert wurde):\\
-Im Teilbereich der virtuellen Referenzfabrik wird die Digitalisierung und virtuellen Abbildung einer automatisierten Brennstoffzellenproduktion durch digitale Zwillinge nach \href{Navigation/DE/Home/home.html}{Industrie-4.0}-Standards umgesetzt.\\
+\textbf{Zum Teilbereich in welchem das Projekt realisiert wurde:}\\
+Im Teilbereich der virtuellen Referenzfabrik wird die Digitalisierung und virtuellen Abbildung einer automatisierten Brennstoffzellenproduktion durch digitale 
+Zwillinge nach \href{Navigation/DE/Home/home.html}{Industrie-4.0}-Standards umgesetzt.\\
 Realisiert werden die digitalen Zwillinge dabei als Verwaltungsschalen (= AAS = Asset
 Administration Shell).\\ 
  Aufgabe des Teilbereichs ist, eine möglichst exakte virtuelle Abbildung des gesamten Prozesses, des Produktes, der Produktionsdaten und -mittel, sowie Teilprodukte erzeugt werden.\\
@@ -47,22 +48,31 @@ Auftragsvergabe für das REST-Frameworks erfolgte aufgrund meiner Überlegungen 
 	\item \textbf{Motivation:}\\
 	Motvation zur Erstellung des Projekts war, von Seiten des Durchführenden, in seiner Projektarbeit einerseits eine gut umsetzbare Lösung zu präsentieren. Anderseits war eine Motiv dahinter die Thematik einer 
 	robusten Infrastruktur bereits auf dieser Ebene zu etablieren um dazu beizutragen unserer sich ständig wachsenden digitalen Welt stabile Systeme zugrunde zu legen. 
-	    
+
 \end{itemize}
 
 
 \subsection{Projektschnittstellen} 
 \label{sec:Projektschnittstellen}
 \begin{itemize}
-	\item Mit welchen anderen Systemen interagiert die Anwendung (technische Schnittstellen)?
-	\item Wer genehmigt das Projekt \bzw stellt Mittel zur Verfügung? 
-	\item Wer sind die Benutzer der Anwendung?
-	\item Wem muss das Ergebnis präsentiert werden?
+	\item Die Anwendung soll zukünftig mit einer weiteren REST-API aus dem AAS-Registry-Server des \href{https://eclipse.dev/basyx/}{Eclipse-BaSyx-Projektes} 
+	verbunden werden, jedoch ist dies noch nicht implementiert worden, da diese Strukturen gerade im Aufbau sind. 
+	Als weiters System mit welchem die Anwendung aktuell bereits verbunden und getestet wurde, darf man wohl den als Teil des Projekts erstellten Locust-Lasttest 
+	verstehen. Dieser hilft, Tests der Auslastung des Systems durchzuführen.
+	\item Da dieses Projekt Teil eines bereits genehmigten Forschungsprojektes ist, wird es durch das Förderprogramm "go-digital" finanziert, das vom 
+	Bundesministerium für Wirtschaft und Klimaschutz (BMWK) ins Leben gerufen wurde.   
+	\item im weitern Verlauf des Projektes muss das Framework von Anwendungsentwicklern der Fraunhofer weiterentwickelt und angepasst werden und von diesen, oder den
+	Verantwortlichen der jeweieligen am H2Go-Projekt teilnehmenden Instituten installiert und gewartet werden. Jedoch besteht hier weder eine konkrete Umsetzung noch 
+	eine konkrete Planung.  
+	\item Das Projekt wurde den verantwortlichen Betreuern vorgelegt und wurde vom Softwareverantwortlichen Sven Lieckfeld bereits einer Endabnahme unterzogen. Zum 
+	aktuellen Zeitpukt konnte die Endabnahme duch den Projektverantwortlichen Bumin Hatiboglu aus gesundheitlichen Gründen noch nicht durchgeführt werden.   
 \end{itemize}
 
 
 \subsection{Projektabgrenzung} 
 \label{sec:Projektabgrenzung}
 \begin{itemize}
-	\item Was ist explizit nicht Teil des Projekts (\insb bei Teilprojekten)?
+	\item Das Projekt soll explizit nicht als fertig entwickelte und einsatzfähige synchrone Backuplösung für den Registry-Server verstanden werden, da keine 
+	derartigen Funktionalitäten implementiert oder Integriert wurden. Das Projekt stellt lediglich ein Framework zur Verfügung, auf wlechem eine solche Lösung 
+	Implementiert werden kann. Es sollte somit eher als Werkzeug und spezialisierte, aber nicht spezifizierte Schnittstelle verstanden werden.   
 \end{itemize}
